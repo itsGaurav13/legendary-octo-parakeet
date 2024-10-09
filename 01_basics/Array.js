@@ -53,17 +53,17 @@
 
 // slice & splice
 
-// let myarr =[0,1,2,3,4,5]
-// // console.log(myarr[2])
-// // console.log(myarr)
-// console.log("A",myarr)
-// let myNarra2 =myarr.slice(1,4)
-// console.log(myNarra2)
-// console.log("B",myarr)
-// let myNarra3 = myarr.splice(1,4)
+let myarr =[0,1,2,3,4,5]
+console.log(myarr[2])
+console.log(myarr)
+console.log("A",myarr)
+let myNarra2 =myarr.slice(1,4)
+console.log(myNarra2)
+console.log("B",myarr)
+let myNarra3 = myarr.splice(1,4)
 
-// console.log("C",myarr)
-// console.log(myNarra3)
+console.log("C",myarr)
+console.log(myNarra3)
 
 
 let marvel =["ironman","thor","captain","hulk"]

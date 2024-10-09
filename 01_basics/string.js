@@ -5,8 +5,8 @@ console.log(`Hello My name is ${name} and my age is ${age}`);
 const username = new String('gauravsingh')
 console.log(username)
 
-// console.log(username[2,3,5])
-// console.log(username.__proto__);
+console.log(username[2,3,5])
+console.log(username.__proto__);
 console.log(username.toUpperCase());
 
 console.log(username.toLocaleLowerCase());
