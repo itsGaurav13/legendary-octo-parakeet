@@ -20,7 +20,7 @@ console.log(bhuvan)
 let getanother = username.slice(-9,6)
 console.log(getanother)
 
-const trimto=  "      gaurav       "
+const trimto=  "      gaurasfsgv       "
 console.log(trimto)
 console.log(trimto.trimStart())
 console.log(trimto.trimEnd().trimStart())
