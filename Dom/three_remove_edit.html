@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove and Edit Dom</title>
+</head>
+<body>
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+    
+</body>
+<script>
+
+// function addlanguage(langName){
+//     let li= document.createElement('li')
+//     li.innerHTML=`${langName}`
+//     document.querySelector(".language").appendChild(li)
+// }
+// addlanguage("python")
+
+function addlanguage(langName){
+    const li = document.createElement('li')
+    li.innerHTML=`${langName}`
+
+    document.querySelector(".language").appendChild(li)
+
+}
+addlanguage("python")
+addlanguage("python2")
+addlanguage("java")
+addlanguage("java")
+
+// its is a another way of adding list in Optimize way
+
+function addOptilang (langNme){
+    let li = document.createElement('li')
+    li.appendChild(document.createTextNode(langNme))
+    document.querySelector('.language').appendChild(li)
+
+
+}
+addOptilang("gaurav")
+
+
+// its a 3rd way of initialising of li 
+
+function adlang(name){
+    let li=document.createElement('li')
+    let addText=document.createTextNode(name)
+    li.appendChild(addText)
+    document.querySelector('.language').appendChild(li)
+
+}
+adlang("singh")
+
+
+// how to EDIT value
+
+let secondlang =document.querySelector("li:nth-child(3)")
+console.log(secondlang)
+// secondlang.innerHTML = "mojo"                         2st way of edit value
+
+document.createElement('li')
+secondlang.textContent="gaurav"   // 2nd ways
+
+
+// another ways of edit
+
+let chnage =document.querySelector("li:nth-child(4)")
+let newli= document.createElement("li")
+newli.textContent="mojo"
+ chnage.replaceWith(newli)
+
+ // another example
+//  1st
+
+ let java= document.querySelector("li:nth-child(1)")
+ java.innerHTML="typescript"
+
+// 2nd
+
+let me= document.querySelector("li")
+me.textContent="typescript"
+
+// 3rd
+// java.replaceWith(me)
+
+
+// remove
+
+let lastlang =document.querySelector('li:last-child')
+lastlang.remove()
+
+</script>
+</html>

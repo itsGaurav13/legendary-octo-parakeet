@@ -1,15 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom</title>
+
 </head>
-<body>
-    <div class="domm">
-        <h2 id="title">Toady we are learning Dom </h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, dolorem.</p>
+
+<body style=" background-color: rgb(119, 27, 27);
+            color: azure;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thurusday</div>
+        <div class="day">Friday</div>
+        <div class="day">Saturday</div>
+        <div class="day">Sunday</div>
     </div>
-    
+
 </body>
+<script>
+    let MyVAr = document.querySelector('.parent')
+    console.log(MyVAr);
+    console.log(MyVAr.children[0].innerHTML);
+    // for (let i = 0; i < MyVAr.children.length; i++) {
+    //     console.log(MyVAr.children[i].innerHTML)
+        
+    // }
+    MyVAr.children[2].style.color="green"
+
+// parent to child
+
+    // console.log(MyVAr.firstElementChild.innerHTML);
+    // console.log(MyVAr.secondElementChild)
+    // console.log(MyVAr.lastElementChild.innerHTML)
+
+
+// child to parent
+
+let dayOne=document.querySelector('.day')
+// console.log(dayOne.innerHTML)  // innerHTML remove html lanhuage it give us simple answer
+// console.log(dayOne.parentElement)
+// console.log(dayOne.nextElementSibling.innerHTML)
+
+
+console.log("Nodes :",MyVAr.childNodes);
+ 
+</script>
+
 </html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style=" background-color: rgb(119, 27, 27);
+color: azure;">
+  
+</body>
+<script>
+    // let create= document.createElement('h2')
+    // console.log(create)
+    // let change=document.querySelector('h2')
+    // change.setAttribute("id","gaurav")
+    // console.log(change)
+
+   let div =document.createElement('div')
+    console.log(div);
+    div.className="main";
+    div.id=Math.ceil (Math.random()*10+1)
+
+    // how to add custom attribute 
+    
+    div.setAttribute("title","generated title")
+    div.style.backgroundColor="green"
+    div.style.padding="12px"
+    div.innerText="Today  We are learning how to create a new element  "
+    document.body.appendChild(div)
+// for (let i = 0; i <=5; i++) {
+    
+//     console.log("hi",i);
+//     for (let j = 0; j <=5; j++) {
+// console.log("hello",j)        
+//     }
+// }
+
+
+  
+</script>
+</html>
